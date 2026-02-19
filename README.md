@@ -33,8 +33,9 @@ Finance-Budget-Analysis/
 │   └── revenues.csv
 │
 ├── Dashboard/
-│   ├── finance_overview.png
-│   └── department_analysis.png
+│   ├── Executive Summary.PNG
+│   ├── Department Insights.PNG
+│   └── Trend Analysis.PNG
 │
 ├── tables.sql
 ├── views.sql
@@ -45,7 +46,7 @@ Finance-Budget-Analysis/
 | File / Folder | Description |
 |---------------|-------------|
 | `Data/` | Raw CSV files — departments, revenues, and expenses |
-| `Dashboard/` | Exported dashboard screenshots |
+| `Dashboard/` | Exported dashboard screenshots (3 pages) |
 | `tables.sql` | Creates the database, tables, and imports CSV data |
 | `views.sql` | 8 analytical SQL views used to power the dashboards |
 | `README.md` | Project documentation |
@@ -98,24 +99,26 @@ GROUP BY
 
 ## 📈 Dashboard Pages
 
-**1. Executive Summary**  
+The Power BI dashboard consists of three comprehensive pages:
+
+**1. Executive Summary** ([Screenshot](Dashboard/Executive%20Summary.PNG))  
 Tracks Total Revenue, Total Expenses, and Profit Growth % across the company. DAX measures dynamically color KPIs green for positive growth and red for negative growth.
 
-**2. Department Insights**  
+**2. Department Insights** ([Screenshot](Dashboard/Department%20Insights.PNG))  
 Highlights the top spending departments using bar charts and card visuals, with a side-by-side breakdown of actual spending vs. allocated budget.
 
-**3. Trend Analysis**  
+**3. Trend Analysis** ([Screenshot](Dashboard/Trend%20Analysis.PNG))  
 Visualizes monthly revenue trends and profit trajectories through line and scatter charts, including forecast indicators.
 
 ---
 
 ## ▶️ How to Run
 
-1. Open SQL Server and run `tables.sql`
+1. **Open SQL Server and run `tables.sql`**
    > ⚠️ Update the file paths in the `BULK INSERT` statements to match your local `Data/` folder location
-2. Run `views.sql` to create all 8 analytical views
-3. Open Power BI Desktop and connect to your SQL Server instance
-4. Load the views as data sources and build your report — or refer to the dashboard screenshots and live link above
+2. **Run `views.sql`** to create all 8 analytical views
+3. **Open Power BI Desktop** and connect to your SQL Server instance
+4. **Load the views** as data sources and build your report — or refer to the dashboard screenshots and live link above
 
 ---
 
